@@ -1,7 +1,5 @@
 # Project : PredictVote
 
-## Objectif : Prédiction du prix de carte graphiques 
-
 ## Overview
 We aim to use public french datasets and to scrappe sites such as Insee and others.
 
