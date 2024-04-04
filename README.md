@@ -1,19 +1,16 @@
-Secret message : Póg Mo Thóin
+# Project : PredictVote
 
-* Creating a clear and informative README file is crucial for any project, as it often serves as the first point of reference for anyone who encounters your project repository.
-* Below is a template to start with: 
-
-# Project Title
+## Objectif : Prédiction du prix de carte graphiques 
 
 ## Overview
-Briefly describe what the project does and its purpose. Include any unique features or problems it solves.
+We aim to use public french datasets and to scrappe sites such as Insee and others.
 
 ## Features
-- Feature 1: Describe the feature and its benefit.
-- Feature 2: Highlight another feature and why it's useful.
-- Feature 3: If applicable, describe another key aspect of the project.
+- Step 1 : Aggregatte all datasets as to create a training dataset
+- Step 2 : Test ML models and define the best
+- Step 3 : Conclusions 
 
-## Installation
+## Installation (in progress)
 Provide step-by-step instructions on how to get a development environment running.
 
 ```bash
