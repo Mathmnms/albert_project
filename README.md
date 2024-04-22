@@ -16,6 +16,7 @@ The dataset includes the following features for each municipality:
 - Actual voters (`Votants`)
 - Candidate name (`Nom`)
 - Percentage of votes/expression (`% Voix/Exp`)
+- Number of mosque (`mosquee`)
 - Year of election data (`year`)
 - INSEE code for the commune (`code_commune_INSEE`)
 - Postal code (`code_postal`)
@@ -24,7 +25,6 @@ The dataset includes the following features for each municipality:
 - Population size (`POP`)
 - Number of victims (`victimes`)
 - Number of infractions (`infractions`)
-- Number of mosque (`mosquee`)
 
 ## Project Steps
 
