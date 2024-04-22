@@ -8,13 +8,22 @@ PredictVote is designed to analyze public French datasets and scrape various sou
 
 The dataset includes the following features for each municipality:
 
-- Latitude (`lat`)
-- Longitude (`lon`)
-- Population size (`population`)
-- Number of victims (`nbr de victimes`)
-- Number of infractions (`nbr d'infraction`)
-- Water quality (`qualité de l'eau`)
-- Number of commercial establishments (`nombre de commerce`)
+- Department code (`code_dep`)
+- Department name (`lib_dep`)
+- Municipality code (`code_commune`)
+- Municipality name (`lib_commune`)
+- Registered voters (`Inscrits`)
+- Actual voters (`Votants`)
+- Candidate name (`Nom`)
+- Percentage of votes/expression (`% Voix/Exp`)
+- Year of election data (`year`)
+- INSEE code for the commune (`code_commune_INSEE`)
+- Postal code (`code_postal`)
+- Latitude (`latitude`)
+- Longitude (`longitude`)
+- Population size (`POP`)
+- Number of victims (`victimes`)
+- Number of infractions (`infractions`)
 
 ## Project Steps
 
