@@ -24,6 +24,7 @@ The dataset includes the following features for each municipality:
 - Population size (`POP`)
 - Number of victims (`victimes`)
 - Number of infractions (`infractions`)
+- Number of mosque (`mosquee`)
 
 ## Project Steps
 
