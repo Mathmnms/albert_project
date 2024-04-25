@@ -57,3 +57,10 @@ Our primary goal is to predict voting outcomes for French EU representatives by 
 
 As EU elections approach, understanding the potential voting trends at the municipal level is crucial. This project offers valuable predictions that can assist political analysts, campaign managers, and policymakers in strategic decision-making based on localized data.
 
+## Sources of dataset
+
+[1] https://www.data.gouv.fr/fr/datasets/comptes-des-communes-2014-2021/
+[2] https://www.la-salat.com/mosquees
+[3] https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-definitifs-du-1er-tour-par-communes/
+[4] https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-2nd-tour/
+[5] https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-naf-agregee-commune/information/
