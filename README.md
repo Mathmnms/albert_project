@@ -41,3 +41,8 @@ Test multiple machine learning models to identify the best performer based on pr
 The dataset is available for download via the following Google Drive link:
 
 [Download Dataset](https://drive.google.com/drive/folders/1bSHFMVzuUL2KWNdyiowYFEcjuPng7V04?usp=sharing)
+
+
+## Objectives 
+
+We aim to give a prediction of the EU french representives vote using municipality features.    
