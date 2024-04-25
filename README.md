@@ -1,59 +1,59 @@
-# Project: PredictVote
+# PredictVote Project
 
 ## Overview
 
-PredictVote is designed to analyze public French datasets and scrape various sources, such as the French National Institute of Statistics and Economic Studies (INSEE) and other websites. The objective is to compile a comprehensive dataset that includes a range of features by municipality, highlighting voting trends from 2017 to 2021.
+PredictVote is a predictive analytics project focused on leveraging French public datasets to forecast voting patterns in municipal elections. By harnessing data from the French National Institute of Statistics and Economic Studies (INSEE) and other websites, PredictVote aims to create a robust dataset that encompasses various municipal features and voting trends from 2017 to 2021.
 
-### Data Features
+## Features of the Dataset
 
-The dataset includes the following features for each municipality:
+Each municipality in the dataset is characterized by the following attributes:
 
 - **code_dep**: Department code.
-- **lib_commune**: Name of the commune.
+- **lib_commune**: Commune name.
 - **Inscrits**: Number of registered voters.
 - **Votants**: Number of actual voters.
-- **Nom**: Name (possibly of candidates or relevant entities).
-- **% Voix/Exp**: Percentage of votes/expression.
-- **year**: Year of the data entry or event.
-- **code_commune_INSEE**: INSEE code of the commune.
-- **code_postal**: Postal code of the commune.
-- **latitude**: Latitude coordinate of the commune.
-- **longitude**: Longitude coordinate of the commune.
-- **victimes_par_hab**: Number of victims per inhabitant.
-- **infractions_par_hab**: Number of infractions per inhabitant.
-- **mosquee_par_hab**: Number of mosques per inhabitant.
-- **NB_Pers_par_Foyer_Alloc_par_hab**: Number of persons per household receiving allowances per inhabitant.
-- **statut_commune_uu2020**: Status of the commune in 2020.
+- **Nom**: Names of candidates or significant entities.
+- **% Voix/Exp**: Percentage of votes.
+- **year**: Year of data collection.
+- **code_commune_INSEE**: Communal INSEE code.
+- **code_postal**: Postal code.
+- **latitude**: Geographical latitude.
+- **longitude**: Geographical longitude.
+- **victimes_par_hab**: Victims per inhabitant.
+- **infractions_par_hab**: Infractions per inhabitant.
+- **mosquee_par_hab**: Mosques per inhabitant.
+- **NB_Pers_par_Foyer_Alloc_par_hab**: Number of allowance-receiving individuals per household.
+- **statut_commune_uu2020**: Commune status in 2020.
 - **revenu_imposable_par_habitant**: Taxable income per inhabitant.
-- **rural**: Indicator of whether the commune is rural.
-- **montagne**: Indicator of whether the commune is in a mountainous area.
-- **touristique**: Indicator of whether the commune is a tourist area.
-- **ptot_n**: Total population (nomenclature not specified).
-- **dep_inv_hor_remb_par_hab**: Expenditure on unremunerated investments per inhabitant.
+- **rural**: Rural status indicator.
+- **montagne**: Mountainous area indicator.
+- **touristique**: Tourism area indicator.
+- **ptot_n**: Total population.
+- **dep_inv_hor_remb_par_hab**: Non-reimbursed investment expenditure per inhabitant.
 - **dot_glo_fonc_par_hab**: Global functional endowment per inhabitant.
 - **conso_ind_par_hab**: Industrial consumption per inhabitant.
 - **cons_agr_par_hab**: Agricultural consumption per inhabitant.
-- **conso_ter_par_hab**: Tertiary (service sector) consumption per inhabitant.
+- **conso_ter_par_hab**: Tertiary sector consumption per inhabitant.
 - **conso_res_par_hab**: Residential consumption per inhabitant.
 
-
-## Project Steps
+## Project Workflow
 
 ### Step 1: Data Aggregation
+Compile and clean datasets from various sources to create a unified and comprehensive dataset ready for analysis.
 
-Aggregate all datasets to create a comprehensive training dataset. This step involves data cleaning, integration, and preparation for analysis.
+### Step 2: Model Development and Testing
+Evaluate various machine learning models to identify the most accurate predictor based on predefined performance metrics.
 
-### Step 2: Model Testing
+## Accessing the Dataset
 
-Test multiple machine learning models to identify the best performer based on predefined metrics. This step
-
-## Dataset Access
-
-The dataset is available for download via the following Google Drive link:
-
+The dataset can be accessed and downloaded through the following link:
 [Download Dataset](https://drive.google.com/drive/folders/1bSHFMVzuUL2KWNdyiowYFEcjuPng7V04?usp=sharing)
 
+## Project Objectives
 
-## Objectives 
+Our primary goal is to predict voting outcomes for French EU representatives by analyzing municipal features. This model aims to provide insights ahead of the upcoming EU elections, helping to identify political inclinations across different towns.
 
-We aim to give a prediction of the EU french representives vote using municipality features.    
+## Significance of the Project
+
+As EU elections approach, understanding the potential voting trends at the municipal level is crucial. This project offers valuable predictions that can assist political analysts, campaign managers, and policymakers in strategic decision-making based on localized data.
+
