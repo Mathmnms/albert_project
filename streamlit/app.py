@@ -1,49 +1,55 @@
 import streamlit as st
-import pandas as pd
 from joblib import load
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
 
-# Load the logistic regression model
-model = load('best_logistic_regression_model.joblib')
+# Charger le modèle à partir du fichier spécifié
+model = load(r"data\best_logistic_regression_model.joblib")
 
-# Setup Streamlit UI
-st.title('PredictVote')
+def inverse_category(num):
+    if num == 0:
+        return 'LE PEN, ZEMMOUR'
+    elif num == 1:
+        return 'MACRON'
+    elif num == 2:
+        return 'HIDALGO, HAMON'
+    elif num == 3:
+        return 'MÉLENCHON, ROUSSEL'
+    elif num == 4:
+        return 'FILLON, PÉCRESSE'
+    else:
+        return 'Catégorie inconnue'
 
-# Create a dictionary to hold user inputs
-user_input = {}
+st.title("PredictVote : L'outil de référence en prédiction de vote")
 
-# Create sliders for numerical features
-for feature, range_vals in data_structure.items():
-    if isinstance(range_vals, list):  # Assuming it's a numerical range
-        user_input[feature] = st.slider(f'Select {feature}', min_value=range_vals[0], max_value=range_vals[1], value=(range_vals[0] + range_vals[1]) // 2)
-    else:  # It's a categorical feature
-        user_input[feature] = st.selectbox(f'Select {feature}', range_vals)
+# Créer un formulaire pour entrer les valeurs des caractéristiques
+with st.form(key='input_form'):
+    # Entrées pour chaque caractéristique attendue par le modèle
+    feature1 = st.number_input('Entrez la valeur pour la caractéristique 1', format="%.2f")
+    feature2 = st.number_input('Entrez la valeur pour la caractéristique 2', format="%.2f")
+    feature3 = st.number_input('Entrez la valeur pour la caractéristique 3', format="%.2f")
+    feature4 = st.number_input('Entrez la valeur pour la caractéristique 4', format="%.2f")
+    feature5 = st.number_input('Entrez la valeur pour la caractéristique 5', format="%.2f")
+    feature6 = st.number_input('Entrez la valeur pour la caractéristique 6', format="%.2f")
+    feature7 = st.number_input('Entrez la valeur pour la caractéristique 7', format="%.2f")
+    feature8 = st.number_input('Entrez la valeur pour la caractéristique 8', format="%.2f")
+    feature9 = st.number_input('Entrez la valeur pour la caractéristique 9', format="%.2f")
+    feature10 = st.number_input('Entrez la valeur pour la caractéristique 10', format="%.2f")
+    feature11 = st.number_input('Entrez la valeur pour la caractéristique 11', format="%.2f")
+    feature12 = st.number_input('Entrez la valeur pour la caractéristique 12', format="%.2f")
+    feature13 = st.number_input('Entrez la valeur pour la caractéristique 13', format="%.2f")
+    feature14 = st.number_input('Entrez la valeur pour la caractéristique 14', format="%.2f")
+    feature15 = st.number_input('Entrez la valeur pour la caractéristique 15', format="%.2f")
+    feature16 = st.number_input('Entrez la valeur pour la caractéristique 16', format="%.2f")
+    feature17 = st.number_input('Entrez la valeur pour la caractéristique 17', format="%.2f")
+    feature18 = st.number_input('Entrez la valeur pour la caractéristique 18', format="%.2f")
+    feature19 = st.number_input('Entrez la valeur pour la caractéristique 19', format="%.2f")
 
-# Convert user inputs to DataFrame for prediction
-input_df = pd.DataFrame([user_input])
+    submit_button = st.form_submit_button(label='Prédire')
 
-# Preprocessing and predictions
-categorical_cols = ['statut_commune_uu2020']
-numerical_cols = input_df.columns.drop('statut_commune_uu2020')
+if submit_button:
+    # Rassembler toutes les valeurs des caractéristiques dans un tableau
+    input_features = [feature1, feature2, feature3, feature4, feature5, feature6, feature7, feature8, feature9, feature10, 
+                      feature11, feature12, feature13, feature14, feature15, feature16, feature17, feature18, feature19]
 
-categorical_transformer = OneHotEncoder(handle_unknown='ignore')
-numerical_transformer = StandardScaler()
-
-preprocessor = ColumnTransformer(
-    transformers=[
-        ('num', numerical_transformer, numerical_cols),
-        ('cat', categorical_transformer, categorical_cols)
-    ])
-
-pipeline = Pipeline(steps=[('preprocessor', preprocessor)])
-
-# Transform the input data
-X_transformed = pipeline.fit_transform(input_df)
-
-# Use the model to make a prediction
-prediction = model.predict(X_transformed)
-
-# Display the prediction
-st.write(f'The predicted category is: {prediction[0]}')
+    # Faire une prédiction avec le modèle
+    prediction = model.predict([input_features])
+    st.write(f'Prédiction: {inverse_category(prediction[0])}')
