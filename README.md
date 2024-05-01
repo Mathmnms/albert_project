@@ -47,7 +47,8 @@ Evaluate various machine learning models to identify the most accurate predictor
 ## Accessing the Dataset
 
 The dataset can be accessed and downloaded through the following link:
-[Download Dataset](https://drive.google.com/drive/folders/1bSHFMVzuUL2KWNdyiowYFEcjuPng7V04?usp=sharing)
+[Download Dataset](https://drive.google.com/drive/folders/1bSHFMVzuUL2KWNdyiowYFEcjuPng7V04?usp=sharing).
+
 In the drive, you can find PROOFCONDEPT.zip with all the data and the merging methods
 
 ## Project Objectives
