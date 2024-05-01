@@ -57,10 +57,8 @@ Our primary goal is to predict voting outcomes for French EU representatives by 
 
 As EU elections approach, understanding the potential voting trends at the municipal level is crucial. This project offers valuable predictions that can assist political analysts, campaign managers, and policymakers in strategic decision-making based on localized data.
 
-## Sources of dataset
-
-[1] https://www.data.gouv.fr/fr/datasets/comptes-des-communes-2014-2021/
-[2] https://www.la-salat.com/mosquees
-[3] https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-definitifs-du-1er-tour-par-communes/
-[4] https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-2nd-tour/
-[5] https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-naf-agregee-commune/information/
+1. [Communal Accounts from 2014 to 2021](https://www.data.gouv.fr/fr/datasets/comptes-des-communes-2014-2021/) - Financial data for French communes over several years.
+2. [Mosques in La Salat](https://www.la-salat.com/mosquees) - Directory of mosques found in the La Salat region.
+3. [2017 French Presidential Election Results](https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-definitifs-du-1er-tour-par-communes/) - Official results of the first round of the 2017 French presidential election by commune.
+4. [2022 French Presidential Election Results](https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-2nd-tour/) - Final results of the second round of the 2022 French presidential election.
+5. [Annual Electricity and Gas Consumption by NAF Codes](https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-naf-agregee-commune/information/) - Aggregated annual energy usage data by NAF economic classification at the commune level.
