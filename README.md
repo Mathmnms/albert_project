@@ -64,3 +64,10 @@ As EU elections approach, understanding the potential voting trends at the munic
 3. [2017 French Presidential Election Results](https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-definitifs-du-1er-tour-par-communes/) - Official results of the first round of the 2017 French presidential election by commune.
 4. [2022 French Presidential Election Results](https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-2nd-tour/) - Final results of the second round of the 2022 French presidential election.
 5. [Annual Electricity and Gas Consumption by NAF Codes](https://opendata.agenceore.fr/explore/dataset/conso-elec-gaz-annuelle-par-naf-agregee-commune/information/) - Aggregated annual energy usage data by NAF economic classification at the commune level.
+
+## How to test the model ? 
+### you can use our streamlit app
+![example]("./model/app_capture.png")
+'''
+python -m streamlit run streamlit\app.py
+'''

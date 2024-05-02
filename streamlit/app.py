@@ -2,7 +2,7 @@ import streamlit as st
 from joblib import load
 
 # Charger le modèle à partir du fichier spécifié
-model = load(r"data\best_logistic_regression_model.joblib")
+model = load(r"model\best_logistic_regression_model.joblib")
 
 def inverse_category(num):
     if num == 0:
