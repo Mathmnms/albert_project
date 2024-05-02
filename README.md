@@ -69,5 +69,6 @@ As EU elections approach, understanding the potential voting trends at the munic
 ### You Can Use Our Streamlit App
 ![example](model/app_capture.png)
 
+### How to run the app ? 
 ```bash
 python -m streamlit run streamlit/app.py
