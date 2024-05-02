@@ -67,7 +67,7 @@ As EU elections approach, understanding the potential voting trends at the munic
 
 ## How to test the model ? 
 ### you can use our streamlit app
-![example]("/model/app_capture.png")
+![example]("model\app_capture.png")
 '''
 python -m streamlit run streamlit\app.py
 '''
