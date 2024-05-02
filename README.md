@@ -72,3 +72,7 @@ As EU elections approach, understanding the potential voting trends at the munic
 ### How to run the app ? 
 ```bash
 python -m streamlit run streamlit/app.py
+```
+## Video
+[View Video](https://www.loom.com/embed/994fb34afffd409c8c62a98c31ec3bf1?sid=9bd7c51a-92d8-4e16-8a05-c26e11652180)
+
